@@ -1,0 +1,73 @@
+.policyText {
+  cursor: pointer;
+  color: var(--theme-color);
+}
+
+.modal {
+  overflow: hidden;
+  display: grid;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  width: 100%;
+  pointer-events: none;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  width: 100%;
+  pointer-events: all;
+}
+
+.privacyWrapper {
+  overflow-y: scroll;
+  width: 100%;
+  padding: 20px;
+}
+
+.closeButton {
+  pointer-events: all;
+  position: relative !important;
+}
+
+.closeIcon {
+  fill: #00000050 !important;
+}
+
+@media (min-width: 576px) {
+  .container {
+    height: auto;
+    max-height: 80vh;
+    max-width: 540px;
+  }
+
+  .closeButton {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+  }
+
+  .closeIcon {
+    fill: #fff !important;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+}

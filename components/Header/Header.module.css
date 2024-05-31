@@ -1,0 +1,61 @@
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0 4%;
+  box-shadow: 0 0 40px rgb(82 85 90 / 10%) !important;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact {
+  align-items: start;
+  margin-right: 20px;
+}
+
+.icon {
+  margin-right: 12px;
+}
+
+.whatsApp {
+  fill: #258f34 !important;
+}
+
+.logo {
+  margin-top: 8px;
+  width: 150px;
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 0 4%;
+  }
+  .button {
+    display: none;
+  }
+  .icon {
+    margin-right: 4px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .contact {
+    margin: 0;
+  }
+}

@@ -1,0 +1,82 @@
+.container {
+  z-index: 1;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 20px !important;
+}
+
+.card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.bottonContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.bottonContainer button {
+  width: calc(100% - 40px);
+  display: flex;
+}
+
+.button {
+  color: #ffffff;
+  background-color: #cf802a;
+}
+
+.button:hover {
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  padding: 0 16px;
+  color: #00000050;
+}
+.back span {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif !important;
+  font-weight: 100 !important;
+  font-size: 15px;
+  line-height: 15px;
+  text-decoration: underline;
+}
+
+.formWrapper {
+  display: grid;
+  gap: 16px;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .formWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+    justify-content: space-between;
+  }
+
+  .bottonContainer button {
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .hideMobile {
+    display: none;
+  }
+
+  .title {
+    font-size: 2.5rem !important;
+  }
+}

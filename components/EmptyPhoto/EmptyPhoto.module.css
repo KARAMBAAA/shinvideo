@@ -1,0 +1,10 @@
+.emptyPhoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.emptyPhoto * {
+  fill: rgb(107, 107, 107) !important;
+}

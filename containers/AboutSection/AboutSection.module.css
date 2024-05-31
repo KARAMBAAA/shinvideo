@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  gap: 24px;
+  text-align: center;
+}
+
+.extraSvg {
+  position: absolute;
+  bottom: -5px;
+  right: 3%;
+  z-index: -1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.svgAir {
+  width: 60%;
+}
+
+.svg {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    display: grid;
+    gap: 20px;
+  }
+
+  .svg,
+  .svgAir {
+    width: 30%;
+  }
+}

@@ -1,0 +1,13 @@
+.block {
+  width: 100%;
+  border-radius: 4px;
+  /* margin: 28px; */
+  fill: rgb(121, 121, 121);
+}
+
+@media (min-width: 768px) {
+  .block {
+    width: 16%;
+    min-width: 100px;
+  }
+}

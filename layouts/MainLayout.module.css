@@ -1,0 +1,15 @@
+.wrapper {
+}
+
+.content {
+  /* overflow-y: scroll; */
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.empty {
+  height: 68px;
+}

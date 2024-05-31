@@ -1,0 +1,18 @@
+.header {
+  border-bottom: 1px solid rgba(128, 137, 150, 0.1);
+}
+
+.formContent {
+  display: grid;
+  gap: 30px;
+}
+
+.formTop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.container {
+  box-shadow: 0 0 20px rgb(82 85 90 / 10%) !important;
+}

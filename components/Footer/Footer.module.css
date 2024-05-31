@@ -1,0 +1,52 @@
+.footer {
+  width: 100%;
+  background-color: var(--main-color);
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  margin-top: 16px;
+  width: 150px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.icon {
+  margin-right: 8px;
+}
+.whatsApp {
+  fill: #258f34 !important;
+}
+
+@media (max-width: 576px) {
+  .contact {
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .flex {
+    justify-content: flex-start;
+  }
+}

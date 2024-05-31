@@ -1,0 +1,18 @@
+.card {
+  max-width: 100%;
+  flex: auto;
+  box-shadow: 0 0 40px rgb(82 85 90 / 10%) !important;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 30%;
+    flex: 30%;
+  }
+}

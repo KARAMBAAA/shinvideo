@@ -1,0 +1,59 @@
+.header {
+  border-bottom: 1px solid rgba(128, 137, 150, 0.1);
+}
+
+.formContent {
+  min-height: 80%;
+  display: grid;
+  gap: 30px;
+}
+
+.formTop {
+  display: grid;
+  gap: 30px;
+}
+
+.container {
+  box-shadow: 0 0 20px rgb(82 85 90 / 10%) !important;
+}
+
+.accept {
+  display: flex;
+  align-items: center;
+}
+
+.commentInput {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(128, 137, 150, 0.1);
+  outline: none;
+  resize: none;
+  padding: 8px;
+}
+
+.commentInput:focus {
+  outline: none !important;
+  border: 2px solid var(--theme-color) !important;
+}
+
+.commentInput:hover {
+  outline: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.479);
+}
+
+.input div::after {
+  /* outline: 2px solid var(--theme-color) !important; */
+  border-bottom: 2px solid var(--theme-color) !important;
+}
+
+.checbox {
+  color: var(--theme-color) !important;
+}
+
+@media (min-width: 992px) {
+  .formTop {
+    grid-template-columns: 1fr 1fr;
+  }
+}

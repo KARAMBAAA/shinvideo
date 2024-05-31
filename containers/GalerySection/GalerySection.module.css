@@ -1,0 +1,117 @@
+.wrapper {
+  display: grid;
+  gap: 20px;
+  text-align: center;
+}
+
+.galery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.extraSvg {
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+  z-index: -1;
+}
+
+.modalPhoto {
+  width: 100%;
+  max-height: 700px;
+  object-fit: contain;
+}
+
+.photo {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+  max-height: 300px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 16px;
+  transition: all 0.3s !important;
+  object-fit: cover;
+}
+
+.photo:hover {
+  transform: scale(1.01);
+}
+
+@media (min-width: 768px) {
+  .photo {
+    width: 30%;
+    min-width: 300px;
+  }
+
+  .modal {
+    width: 70% !important;
+  }
+}
+
+.modal {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.modalBg {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.sliderWrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.sliderContainer {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.modalContainer {
+  position: relative;
+  display: flex !important;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal:focus-visible {
+  outline: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.closeButton {
+  z-index: 1000;
+  position: fixed !important;
+  top: 60px;
+  right: 10px;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  min-width: auto !important;
+  align-self: flex-start;
+}
+
+.photoDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .closeButton {
+    top: 30px;
+  }
+}

@@ -1,0 +1,32 @@
+.main {
+  margin-top: 68px;
+  padding-bottom: 100px;
+  background-image: url(../../images/reseption.jpg);
+  background-color: rgba(0, 0, 0, 0.267);
+  background-size: cover;
+  background-position-y: 41%;
+}
+
+.main::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000af;
+  opacity: 0.6;
+}
+
+.svg {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  fill: #fff;
+}
+
+.svgSecond {
+  fill: var(--main-color);
+}

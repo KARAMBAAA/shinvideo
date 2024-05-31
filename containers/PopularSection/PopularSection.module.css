@@ -1,0 +1,17 @@
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+}
+
+.wrapper {
+  text-align: center;
+  width: 100%;
+  display: grid;
+  gap: 20px;
+}
+
+.bgColor {
+  background-color: var(--main-color);
+}
